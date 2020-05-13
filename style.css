@@ -1,7 +1,27 @@
-html{
-    font-weight: lighter;
+body{
+    background-color: grey;
+}
+#welcome{
+    font-size: xx-large;
+    
 }
 #kiriban{
     display: inline;
     font-style: italic;
+    color: blue;
+}
+table,td{
+    border: 1px solid black;
+}
+
+.KanariBlink{
+    animation: blinkAnimation 500ms infinite linear;
+}
+@keyframes blinkAnimation{
+    0% { color: red }
+    25% { color: yellow }
+    50% { color: blue }
+    75% { color: white }
+    100% { color: greenyellow }
+
 }
