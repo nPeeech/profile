@@ -29,3 +29,8 @@ table,td{
     100% { color: greenyellow }
 
 }
+.AtcoderId{
+    text-decoration: none;
+    color: brown;
+    background: radial-gradient(white 1%,grey 65%);
+}
