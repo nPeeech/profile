@@ -27,12 +27,14 @@
 </head>
 
 <body>
-    <h1 class="KanariBlink" id="welcome">ようこそ</h1>
-    <h3>あなたは<div id="kiriban"></div>番目の来訪者です。</h3>
-    <p>キリ番を踏めなかった人は好きなだけリロードしよう</p>
+    <div class="KanariBlink" id="welcome">ようこそ</div>
+    <header>
+        あなたは<div id="kiriban"></div>番目の来訪者です。
+        <p>キリ番を踏めなかった人は好きなだけリロードしよう</p>
+    </header>
 
-    <h3>わたくせ</h3>
-    <table>
+    <h3 class="CenterInline">わたくせ</h3>
+    <table class="CenterBlock">
         <tr>
             <td>ハンドルネーム</td>
             <td>nPeeech</td>
@@ -54,15 +56,16 @@
             <td>Vim</td>
         </tr>
     </table>
-    <h3>各種垢</h3>
-    <table>
+    <h3 class="CenterInline">各種垢</h3>
+    <table class="CenterBlock">
         <tr>
             <td>Twitter</td>
             <td><a href="https://twitter.com/nPeeech">https://twitter.com/nPeeech</a></td>
         </tr>
         <tr>
             <td>AtCoder</td>
-            <td><a href="https://atcoder.jp/users/nPeeech">https://atcoder.jp/users/<span class="AtcoderId">nPeeech</span></a></td>
+            <td><a href="https://atcoder.jp/users/nPeeech">https://atcoder.jp/users/<span
+                        class="AtcoderId">nPeeech</span></a></td>
         </tr>
         <tr>
             <td>GitHub</td>
@@ -81,24 +84,105 @@
             <td><a href="https://note.com/npeeech">https://note.com/npeeech</a></td>
         </tr>
     </table>
-    <h3>拙作</h3>
-    <table>
+    <h3 class="CenterInline">拙作</h3>
+    <table class="CenterBlock">
         <tr>
             <td>Go製ライフゲーム on browser</td>
+        </tr>
+        <tr>
             <td><a href="https://npeeech.github.io/LifeGome/">https://npeeech.github.io/LifeGome/</a></td>
         </tr>
         <tr>
-            <td>アナログスピードメーター</td>
-            <td><a href="https://npeeech.github.io/gpSpeed/">https://npeeech.github.io/gpSpeed/</a></td>
-        </tr>
-        <tr>
-            <td>授業録画システム（書き殴り）</td>
-            <td><a href="https://github.com/nPeeech/ClassLog">https://github.com/nPeeech/ClassLog</a></td>
+            <td>
+                <ul>
+                    <li>ライフゲームを作りたい衝動に駆られたので作った</li>
+                    <li>簡単にwasmにコンパイルできそうだったのでしてみたら動いた</li>
+                    <li>iOSでは動かないみたい</li>
+                </ul>
+            </td>
         </tr>
     </table>
-    <p>こうやって並べると量の少なさと浅さが浮き立つ...</p>
-    <p>なにも作ってないじゃん...</p>
-    <small>&copy 2020 nPeeech</small>
+
+    <table class="CenterBlock">
+        <tr>
+            <td>アナログスピードメーター</td>
+        </tr>
+        <tr>
+            <td><a href="https://npeeech.github.io/gpSpeed/">https://npeeech.github.io/gpSpeed/</a></td>
+        </tr>
+
+        <tr>
+            <td>
+                <ul>
+                    <li>CSSを完全に理解したときにぐりぐり動く何かを作りたくなった結果</li>
+                    <li>もし使うなら端末の位置情報精度をGPSのみにすること推奨する</li>
+                    <li>PWA対応</li>
+                    <li>結構気に入っている</li>
+                    <li>Covid-19のせいで一度も電車内で使えていない</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table class="CenterBlock">
+        <tr>
+            <td>通信量がわかるやつ</td>
+        </tr>
+        <tr>
+            <td class="CenterInline"><img src="./media/tushinryo.gif" alt=""></td>
+        </tr>
+        <tr>
+            <td class="CenterInline"><img src="./media/tushinryo.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>居住環境によりダウンロードした総量が分かると嬉しい</li>
+                    <li>Covid-19のせいで一度も実戦投入していない</li>
+                    <li>いずれGitHubに上げる</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table class="CenterBlock">
+        <tr>
+            <td>視線くれるくん</td>
+        </tr>
+        <tr>
+            <td class="CenterInline"><img src="./media/shisennkun.gif" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>積んでいたM5Stack Greyを見つけた</li>
+                    <li>一発ネタ過ぎてコードが残っていない</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table class="CenterBlock">
+        <tr>
+            <td>授業録画システム（書き殴り）</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/nPeeech/ClassLog">https://github.com/nPeeech/ClassLog</a></td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>学校の企画で作った授業を録画するシステム</li>
+                    <li>リンク先はその録画スクリプトと表示部分</li>
+                    <li>開発期間の9割はFFmpegと戦っていた</li>
+                    <li>Faviconすら設定されていない</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <small>&copy 2020 nPeeech</small>
+    </footer>
 </body>
 
 </html>
